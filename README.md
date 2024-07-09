@@ -301,28 +301,6 @@ El proyecto sigue la siguiente estructura de directorios:
 
 - `src/errors.log`: Registro de errores.
 
-## Postman Collections
-
-- En la carpeta `postman_collections`, encontrarás el archivo necesario `proyecto_final.postman_collection.json` para importar la colección `proyecto_final` en Postman y realizar pruebas en el proyecto. Los métodos que lo requieren proporcionan ejemplos de solicitudes HTTP para interactuar con la API y probar su funcionalidad.
-
-- Importante: Como el proyecto cuenta con un Middleware de autorización se deben realizar los siguientes pasos en Postman para tener acceso a los endpoints:
-
-  - Ir a la colección proyecto_final/components/auth/login e ingresar las credenciales que correspondan de acuerdo al role que necesitas para acceder al endpoint (Ver [Credenciales de users con roles asignados para Testings.](#credenciales))
-
-  - Copiar el token obtenido
-
-  - Ir a Postman/Headers/Cookies/Manage Cookies.
-
-    - Add domain.
-
-    - Type a domain name: localhost.
-
-    - Add Cookie : Cambiar Cookie_1=value por jwt=value (debido a que el nombre de la cookie es jwt).
-
-    - Debe quedar un código como el siguiente (el token a continuación es un ejemplo) : jwt=ey123456789wolrtjlwkjt.eyJfaWQiOiI2NGY3YzBkY2ZmMzY2NmQ4YTdjMDA0MDciLCJlbWFpbCI6InVzZXJAY29ycmVvLmNvbSIsInJvbGUiOiJhZG1pbiIsImZpcnN0X25hbWUiOiJ1c2VyIiwibGFzdF9uYW1lIjoidXNlciIsImFnZSI6MzMsImNhcnQiOiI2NGY3YzBkY2ZmMzY2NmQ4YTdjMDA0MDkiLCJpYXQiOjE2OTQwNTU5OTgsImV4cCI6MTY5NDE0MjM5OH0.hIYn2frVQCVNBMGI5E4sRkTqCTBhSHQ0Th0uSOUtabc; Path=/; Expires=Fri, 06 Sep 2024 03:12:07 GMT;
-
-  - Ten en cuenta que los tokens de las cookies expiran por lo que para realizar varios tests debes volver a loguearte y copiar y pegar el token en la cookie de Postman.
-
 ## Enlace al sitio activo
 
 - [Deploy en Render](https://entrega-final-psi.vercel.app/) (Funcionalidad Front-end básica) - Vercel
