@@ -2,7 +2,7 @@
 /* src/public/js/payments/index.js */
 /* ************************************************************************** */
 
-const stripePublicKey = 'p';
+const stripePublicKey = 'pk_test_Dt4ZBItXSZT1EzmOd8yCxonL';
 const stripe = Stripe(stripePublicKey);
 const elements = stripe.elements();
 const card = elements.create('card');

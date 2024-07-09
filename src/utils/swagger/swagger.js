@@ -6,8 +6,8 @@ const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const path = require('path');
 
-const githubRepoLink = 'https://github.com/';
-const appDeployLink = 'https://proyecto-final-production-e7eb.up.railway.app/';
+const githubRepoLink = 'https://github.com/ValenSola/EntregaFinal';
+const appDeployLink = 'https://entrega-final-psi.vercel.app/';
 
 const options = {
   swaggerDefinition: {

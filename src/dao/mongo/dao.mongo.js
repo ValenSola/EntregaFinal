@@ -3,6 +3,7 @@
 /* ************************************************************************** */
 
 const req = require('../../utils/logger/loggerSetup');
+const uri = "mongodb+srv://Guampa07:BH27c6Ck1iWLOJmK@entregafinal0.jzrns14.mongodb.net/?retryWrites=true&w=majority&appName=EntregaFinal0";
 
 class MongoDAO {
   constructor(model) {
